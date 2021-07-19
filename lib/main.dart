@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {
   @override
-
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     Widget titleSection = new Container(
       padding: const EdgeInsets.all(32.0),
       child: new Row(
@@ -16,15 +16,13 @@ class MyApp extends StatelessWidget {
                 new Container(
                   padding: const EdgeInsets.only(bottom: 8.0),
                   child: new Text(
-                    'Lago Villarica Chile',
+                    'Lago Villarica Chile1',
                     style: new TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
                 new Text(
                   'Paisajes de Chile y sus alrededores',
-                  style: new TextStyle(
-                    color: Colors.grey[500]
-                  ),
+                  style: new TextStyle(color: Colors.grey[500]),
                 ),
               ],
             ),
@@ -33,21 +31,22 @@ class MyApp extends StatelessWidget {
             Icons.star,
             color: Colors.red,
           ),
-          new Text(
-            '669'
-          ),
+          new Text('669'),
         ],
       ),
     );
 
-    Column buildButtonColumn(IconData icon,String label){
-      Color color=Theme.of(context).primaryColor;
+    Column buildButtonColumn(IconData icon, String label) {
+      Color color = Theme.of(context).primaryColor;
 
       return new Column(
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          new Icon(icon,color: color,),
+          new Icon(
+            icon,
+            color: color,
+          ),
           new Container(
             margin: const EdgeInsets.only(top: 8.0),
             child: new Text(
@@ -63,13 +62,13 @@ class MyApp extends StatelessWidget {
       );
     }
 
-    Widget buttonSection=new Container(
+    Widget buttonSection = new Container(
       child: new Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          buildButtonColumn(Icons.call,'Llamar'),
-          buildButtonColumn(Icons.near_me,'Ruta'),
-          buildButtonColumn(Icons.share,'Compartir'),
+          buildButtonColumn(Icons.call, 'Llamar'),
+          buildButtonColumn(Icons.near_me, 'Ruta'),
+          buildButtonColumn(Icons.share, 'Compartir'),
         ],
       ),
     );
@@ -82,9 +81,6 @@ class MyApp extends StatelessWidget {
       ),
     );
 
-    
-
-    
     return MaterialApp(
       title: 'layout demo Simple',
       home: Scaffold(
@@ -106,7 +102,5 @@ class MyApp extends StatelessWidget {
         ),
       ),
     );
-
-     
   }
 }
