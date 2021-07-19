@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
                 new Container(
                   padding: const EdgeInsets.only(bottom: 8.0),
                   child: new Text(
-                    'Lago Villarica Chile1',
+                    'Lago Villarica Chile2',
                     style: new TextStyle(fontWeight: FontWeight.bold),
                   ),
                 ),
